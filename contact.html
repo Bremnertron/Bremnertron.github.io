@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BREMNERTRON</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #00FF00;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #00FF00;
+    }
+
+    .contact-info {
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+
+    .glow {
+      animation: glow 1.5s infinite alternate;
+    }
+
+    a {
+      color: #00FF00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+      }
+      to {
+        text-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glow">[ CONTACT BREMNERTRON ]</h1>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:Tech.bremner@gmail.com">Tech.bremner@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/richard-bremner-17a22660/">Linkdin: Richard Bremner</a></p>
+    <p><a href="https://app.hackthebox.com/profile/814346">HTB: Bremnertron</a></p>
+    <p><a href="https://credentials.offsec.com/c83fe02b-025c-4833-aa80-52dedc665364#acc.nSNdELWx">OSCP Cert</a></p>
+    <p><a href="https://discord.gg/z3bDn6Rt">LockSport Bristol</a></p>  
+  </div>
+</body>
+</html>
