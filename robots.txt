@@ -1,0 +1,12 @@
+# robots.txt file for 8r3m.zip
+
+User-agent: *
+Disallow: /
+Disallow: /contact
+Disallow: /about
+
+# Hey there, curious human or AI fiend!
+# If you're reading this, you might be a bot... or just very, very bored.
+# Either way, here’s your secret message:
+
+# if you're looking for secrets, try /hidden-treasure/ (just kidding... or am I?)
